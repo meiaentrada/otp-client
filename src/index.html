@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+
+<body>
+    <h1>DNE INGRESSOS</h1>
+    <h2>SHOW DO MORAES</h2>
+
+
+    <form>
+        <label>CPF</label>
+        <input type="text" name="txt-cpf" id="txt-cpf" value="111.222.333-96">
+        <br>
+        <label>Emissor</label>
+        <input type="text" name="txt-issuer" id="txt-issuer" value="ingresso rapido">
+        <br>
+        <input type="button" id="btn-generate" value="GERAR QR CODE">
+    </form>
+
+    <canvas id="img-qr-code"></canvas>
+    <br><br><br>
+
+    <form action="">
+        <input type="text" name="txt-otp-token" id="txt-otp-token">
+        <br>
+        <input type="button" value="CHECAR" id="btn-check-token">
+        <br>
+        <div id="token-validation" style="width: 100px; height: 100px;"></div>
+    </form>
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>
