@@ -10,7 +10,7 @@ isValidTokenOTP = (secret, token) => {
     return delta !== null && delta.delta == 0
 }
 
-generateOtpURI = (secret, user, issuer) => authenticator.generateTotpUri(secret, user, issuer, algo, digits, window)
+generateOtpURI = (secret, user, issuer) => authenticator.generateTotpUri(secret, user, issuer, algo, digits, window) + "&holder="+ user
 
 generateKey = () => authenticator.generateKey()
 
