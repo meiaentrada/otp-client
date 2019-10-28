@@ -1,13 +1,13 @@
 {
-  "name": "modulo_node",
-  "version": "1.0.0",
+  "name": "meiaentrada-otp",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "DNE Corp",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
