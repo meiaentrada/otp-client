@@ -1,21 +1,17 @@
 {
   "name": "meiaentrada-otp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "DNE Corp",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "path": "^0.12.7"
   },
   "dependencies": {
-    "authenticator": "^1.1.5",
-    "qrcode": "^1.4.2"
+    "authenticator": "^1.1.5"
   }
 }
