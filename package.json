@@ -1,12 +1,12 @@
 {
   "name": "meiaentrada-otp",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js"
   },
-  "keywords": [],
+  "keywords": ["meiaentrada", "otp", "authenticator"],
   "author": "DNE Corp",
   "license": "ISC",
   "devDependencies": {
