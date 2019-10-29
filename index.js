@@ -1,16 +1,16 @@
 const authenticator = require('authenticator'),
-      window = 30,
-      digits = 6,
-      algo = 'SHA1'
+    window = 30,
+    digits = 6,
+    algo = 'SHA1'
 
 generateTokenOTP = (secret) => authenticator.generateToken(secret)
 
-isValidTokenOTP = (secret, token) => {
-    let delta = authenticator.verifyToken(secret, token);
+isValidTokenOTP = (secret, otpValue) => {
+    let delta = authenticator.verifyToken(secret, otpValue);
     return delta !== null && delta.delta == 0
 }
 
-generateOtpURI = (secret, user, issuer) => authenticator.generateTotpUri(secret, user, issuer, algo, digits, window) + "&holder="+ user
+generateOtpURI = (secret, holder, issuer) => authenticator.generateTotpUri(secret, holder, issuer, algo, digits, window) + "&holder=" + holder
 
 generateKey = () => authenticator.generateKey()
 

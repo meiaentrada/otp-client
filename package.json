@@ -1,12 +1,19 @@
 {
   "name": "meiaentrada-otp",
-  "version": "1.0.6",
-  "description": "",
+  "version": "1.0.14",
+  "description": "Módulo para geraçao de validacao token baseados em tempo(OTP)",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js"
   },
-  "keywords": ["meiaentrada", "otp", "authenticator"],
+  "keywords": [
+    "meiaentrada",
+    "otp",
+    "authenticator",
+    "hotp",
+    "totp",
+    "2FA"
+  ],
   "author": "DNE Corp",
   "license": "ISC",
   "devDependencies": {
