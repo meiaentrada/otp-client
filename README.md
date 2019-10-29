@@ -66,6 +66,6 @@ console.log(otpCode); // 774729
 let isValidToken = otp.isValidTokenOTP(secret, otpCode);
 console.log(isValidToken); // true
 
-isValidToken = otp.isValidTokenOTP('123', otpCode);
+isValidToken = otp.isValidTokenOTP('wrong-secret', otpCode);
 console.log(isValidToken); // false
 ```
